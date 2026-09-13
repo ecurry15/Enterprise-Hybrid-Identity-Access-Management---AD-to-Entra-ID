@@ -180,6 +180,11 @@ $Department = "Finance"
 ```
 The `department` attribute becomes especially important later because Entra uses it to automatically manage dynamic group membership.
 
+<img width="970" height="700" alt="Forest creation" src="https://github.com/user-attachments/assets/b47f9679-63d2-4908-aacc-0c385660ba11" />
+
+<img width="828" height="603" alt="AD User Property" src="https://github.com/user-attachments/assets/c182e7ef-161f-4955-9e99-5da130f6a07c" />
+
+
 ---
 
 ## Microsoft Entra Cloud Sync
@@ -212,6 +217,10 @@ This allowed the synchronization scope to be controlled based on the OU structur
 ### Result
 
 The synchronization completed successfully and all **80 Warriors users** were created in the Campbell Entra environment.
+
+<img width="1506" height="633" alt="Sync Scope Rule" src="https://github.com/user-attachments/assets/88325c7c-22e1-4bde-a6df-ce9996a93f72" />
+<img width="1680" height="891" alt="Log_AD import" src="https://github.com/user-attachments/assets/53a830f1-37b4-49bf-b651-053146fd13bd" />
+<img width="1563" height="903" alt="All Users" src="https://github.com/user-attachments/assets/ee0a12ed-3ef3-407e-a11c-92c72424cf42" />
 
 ---
 
@@ -274,8 +283,11 @@ foreach ($user in $TargetUsers) {
     }
 }
 ```
-
 I then confirmed that the users were cloud-managed.
+
+<img width="1439" height="656" alt="User is not cloud managed" src="https://github.com/user-attachments/assets/6ba8bf59-a4b7-42be-96ec-94c85e0546e6" />
+
+<img width="727" height="427" alt="Successful Powershell Query" src="https://github.com/user-attachments/assets/0e2ac226-cc27-4efd-88c5-1707b00fc90c" />
 
 ---
 
@@ -312,6 +324,8 @@ The IAM administrator created four Administrative Units:
 * Marketing
 
 This allows administrative permissions to be scoped to specific areas of the organization.
+
+<img width="1608" height="775" alt="All Groups" src="https://github.com/user-attachments/assets/af14feac-d24e-4382-805e-0426aa033a4a" />
 
 ---
 
@@ -350,6 +364,12 @@ The rule used was:
 
 This group is later used as part of a Conditional Access scenario.
 
+<img width="1687" height="484" alt="Dynamic AU creation" src="https://github.com/user-attachments/assets/d798a20f-913d-4c74-b614-4eaed95f9837" />
+
+<img width="1100" height="885" alt="Dynamic group creation" src="https://github.com/user-attachments/assets/b548a069-26b3-4ef5-a00c-f018b56800f5" />
+
+<img width="1474" height="910" alt="Users added to group" src="https://github.com/user-attachments/assets/346ba3d1-6563-4e74-8c5e-c3423beb8338" />
+
 ---
 
 ## Privileged Identity Management
@@ -372,6 +392,9 @@ The user must activate the appropriate access through PIM when the privilege is 
 2. The administrator activates the required role through PIM.
 3. The task is performed.
 4. The elevated access expires.
+
+<img width="1101" height="500" alt="Adding PIM assignment" src="https://github.com/user-attachments/assets/cefc958b-e61c-4520-9834-89222da8003d" />
+<img width="1655" height="446" alt="PIM elligable" src="https://github.com/user-attachments/assets/e2b4a81a-2d9c-4c0b-860a-70a3fb7cb824" />
 
 ---
 
@@ -400,6 +423,10 @@ The goal was to allow IT users to sign into Salesforce using their Entra credent
 ### Result
 
 The test user successfully federated into Salesforce using their Entra credentials.
+
+<img width="1839" height="903" alt="SSO side by side" src="https://github.com/user-attachments/assets/46e1e4bc-c9d4-4549-ba50-6dc37b10d19e" />
+<img width="946" height="841" alt="Login with EntraSSO" src="https://github.com/user-attachments/assets/77904ded-0813-4fa3-b037-7de99277dcd2" />
+<img width="1678" height="897" alt="Successful SSO Log" src="https://github.com/user-attachments/assets/f52df75b-b192-4927-84f3-6b6946fd33c2" />
 
 ---
 
@@ -431,6 +458,7 @@ The application was configured with delegated Microsoft Graph permissions, inclu
 Admin consent was granted.
 
 The `SecOps Admins` role-assignable group was then assigned to the application.
+
 
 ### Authentication
 
@@ -477,6 +505,9 @@ $groups | ForEach-Object {
 
 This gives SecOps a practical way to investigate identity and access information through Microsoft Graph.
 
+<img width="899" height="890" alt="Oauth MS Graph permissions" src="https://github.com/user-attachments/assets/57483b8f-fbac-4e9f-9e33-d60618b27b88" />
+<img width="1457" height="630" alt="Oauth Connected" src="https://github.com/user-attachments/assets/abd54167-446c-4624-9b30-2c9e0eaf9f01" />
+
 ---
 
 ## Conditional Access
@@ -509,6 +540,12 @@ A VPN was then used to simulate an employee signing in from outside the office (
 
 The test user was denied access as expected.
 
+<img width="749" height="882" alt="CA policy1" src="https://github.com/user-attachments/assets/144368c7-bed2-480e-ac80-6ede38acd805" />
+
+<img width="1647" height="906" alt="BreakGlass excluded from policies" src="https://github.com/user-attachments/assets/01242478-599d-4ba6-a1a6-6f2155adb48a" />
+
+<img width="705" height="585" alt="Dmorgan sign-in out of office" src="https://github.com/user-attachments/assets/eb29044f-d798-4a26-b3c0-05657e0d991f" />
+
 ---
 
 ## Access Reviews
@@ -527,7 +564,7 @@ Automatic changes were not applied because the group is dynamically managed.
 
 ### Review Process
 
-`IAMAdmin1` signs into:
+`IAMAdmin1` signs in to:
 
 `https://myaccess.microsoft.com/`
 
@@ -543,6 +580,10 @@ IAMAdmin1 approved the 19 users who still belonged in Finance and denied Kenneth
 IAMAdmin1 then activated PIM and updated Kenneth's department from Finance to HR.
 
 This allowed the dynamic group to update his membership.
+
+<img width="1336" height="407" alt="Access review completed" src="https://github.com/user-attachments/assets/5dabcf1d-0665-4086-bf09-e21cfbf165d5" />
+
+<img width="975" height="928" alt="Kennith walker denied in access review" src="https://github.com/user-attachments/assets/6ef71c3f-dbab-4314-be8a-9501b77760d8" />
 
 ---
 
@@ -594,6 +635,12 @@ Break-glass accounts should rarely be used.
 
 Because of that, any sign-in should be treated as important and investigated.
 
+<img width="804" height="883" alt="LAW creation and Diagnostic setting" src="https://github.com/user-attachments/assets/56cd0acb-04ae-4032-af30-114a2b18dee7" />
+
+<img width="825" height="874" alt="BreakGlassAlert" src="https://github.com/user-attachments/assets/52cf3d31-ba33-4ee9-9fc4-29d814ba1bfc" />
+
+<img width="1810" height="715" alt="Alert email" src="https://github.com/user-attachments/assets/d1e05652-8377-46e2-93aa-b9bb4af0930a" />
+
 ---
 
 ## Joiner, Mover, Leaver Process
@@ -644,6 +691,17 @@ Brandon Knight takes ownership of the ticket in Salesforce.
 
 Knight then activates the required PIM role and performs the password reset.
 
+Before PIM:
+<img width="1904" height="618" alt="PW reset before PIM" src="https://github.com/user-attachments/assets/11c90574-0789-4da3-bfcd-5a81d9567ae9" />
+
+PIM Activation Log:
+
+<img width="1672" height="867" alt="Bknight PIM log" src="https://github.com/user-attachments/assets/92a4b539-e8e2-4b73-abcd-b48c0be750ae" />
+
+Result:
+
+<img width="1844" height="721" alt="pw-reset-after PIM" src="https://github.com/user-attachments/assets/363feeda-4952-4c37-adc1-920b0e8ff628" />
+
 ---
 
 ### Scenario 2 — Security Investigation
@@ -662,6 +720,18 @@ The SecOps analyst then:
 4. Uses Microsoft Graph PowerShell.
 5. Queries Anthony's group membership.
 
+Before PIM:
+<img width="853" height="854" alt="SecOps blocked from Oauth" src="https://github.com/user-attachments/assets/5551c5eb-45d3-4f47-895d-b534fa8d8860" />
+
+PIM Activation:
+<img width="1898" height="944" alt="SecOpsPIM Activation" src="https://github.com/user-attachments/assets/089212b7-3684-41b7-8e39-2b19214e527f" />
+
+Results:
+<img width="1107" height="622" alt="MS-graph successful query" src="https://github.com/user-attachments/assets/a30cfdc8-1d81-4b4b-b4c0-ef44d38f6a5e" />
+
+<img width="1684" height="902" alt="Log_Oauth" src="https://github.com/user-attachments/assets/1d0a959d-af31-471a-abe0-a94eb6b084be" />
+
+
 ---
 
 ### Scenario 3 — Employee Department Change
@@ -671,6 +741,17 @@ Kenneth Walker changes departments from Finance to HR.
 The IAM administrator activates the appropriate PIM role and updates his department.
 
 Because the department-based groups are dynamic, Entra can automatically update his group membership.
+
+Before PIM: 
+
+<img width="976" height="936" alt="IAM before PIM" src="https://github.com/user-attachments/assets/4bb26259-2490-4d6f-97cb-7f824153ea8d" />
+
+PIM Activation Log:
+<img width="1680" height="905" alt="IAM PIM log" src="https://github.com/user-attachments/assets/9fc6a05c-c10f-48de-8f08-0c288a93894f" />
+
+Results:
+
+<img width="1901" height="929" alt="IAM after PIM" src="https://github.com/user-attachments/assets/4d451327-0f32-4f97-b133-85eac617f64e" />
 
 ---
 
