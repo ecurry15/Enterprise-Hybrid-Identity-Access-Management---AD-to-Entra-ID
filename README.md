@@ -691,14 +691,15 @@ Brandon Knight takes ownership of the ticket in Salesforce.
 
 Knight then activates the required PIM role and performs the password reset.
 
-Before PIM:
+Before PIM:  
+
 <img width="900" alt="PW reset before PIM" src="https://github.com/user-attachments/assets/11c90574-0789-4da3-bfcd-5a81d9567ae9" />
 
-PIM Activation Log:
+PIM Activation Log:  
 
 <img width="900" alt="Bknight PIM log" src="https://github.com/user-attachments/assets/92a4b539-e8e2-4b73-abcd-b48c0be750ae" />
 
-Result:
+Result:  
 
 <img width="900" alt="pw-reset-after PIM" src="https://github.com/user-attachments/assets/363feeda-4952-4c37-adc1-920b0e8ff628" />
 
@@ -720,13 +721,16 @@ The SecOps analyst then:
 4. Uses Microsoft Graph PowerShell.
 5. Queries Anthony's group membership.
 
-Before PIM:
+Before PIM:  
+
 <img width="900" alt="SecOps blocked from Oauth" src="https://github.com/user-attachments/assets/5551c5eb-45d3-4f47-895d-b534fa8d8860" />
 
-PIM Activation:
+PIM Activation:  
+
 <img width="900" alt="SecOpsPIM Activation" src="https://github.com/user-attachments/assets/089212b7-3684-41b7-8e39-2b19214e527f" />
 
-Results:
+Results:  
+
 <img width="900" alt="MS-graph successful query" src="https://github.com/user-attachments/assets/a30cfdc8-1d81-4b4b-b4c0-ef44d38f6a5e" />
 
 <img width="900" alt="Log_Oauth" src="https://github.com/user-attachments/assets/1d0a959d-af31-471a-abe0-a94eb6b084be" />
@@ -742,14 +746,15 @@ The IAM administrator activates the appropriate PIM role and updates his departm
 
 Because the department-based groups are dynamic, Entra can automatically update his group membership.
 
-Before PIM: 
+Before PIM:   
 
 <img width="900" alt="IAM before PIM" src="https://github.com/user-attachments/assets/4bb26259-2490-4d6f-97cb-7f824153ea8d" />
 
-PIM Activation Log:
+PIM Activation Log:  
+
 <img width="900" alt="IAM PIM log" src="https://github.com/user-attachments/assets/9fc6a05c-c10f-48de-8f08-0c288a93894f" />
 
-Results:
+Results:  
 
 <img width="900" alt="IAM after PIM" src="https://github.com/user-attachments/assets/4d451327-0f32-4f97-b133-85eac617f64e" />
 
