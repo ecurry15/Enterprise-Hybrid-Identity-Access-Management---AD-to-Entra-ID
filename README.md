@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-* [Business Scenario](##Business-Scenario)
+* [Business Scenario](#business-scenario)
 * [Lab Architecture](#lab-architecture)
 * [Active Directory Environment](#active-directory-environment)
 * [Microsoft Entra Cloud Sync](#microsoft-entra-cloud-sync)
