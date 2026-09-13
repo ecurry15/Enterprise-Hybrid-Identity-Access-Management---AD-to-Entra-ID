@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+* [Technologies Used](#technologies-used)
 * [Business Scenario](#business-scenario)
 * [Lab Architecture](#lab-architecture)
 * [Active Directory Environment](#active-directory-environment)
@@ -19,20 +20,6 @@
 * [Real-World IAM Scenarios](#real-world-iam-scenarios)
 * [Challenges & Troubleshooting](#challenges--troubleshooting)
 * [Skills Demonstrated](#skills-demonstrated)
-
----
-## Business Scenario
-
-- Warriors is a company with 80 employees that has been acquired by Campbell Company.
-
-- Before the acquisition, Warriors managed employee identities through an on-premises Windows Active Directory environment.
-
-- As part of the acquisition, the 80 Warriors employees need to be moved into Campbell's Microsoft Entra environment.
-
-- I was responsible for designing and testing an identity management process that could support the migration while also giving administrators a way to manage access, enforce security policies, and handle employee changes after the migration.
-
-- The lab starts with an on-premises Windows Server environment and follows the identity lifecycle all the way through cloud synchronization, user management, access control, SSO, privileged access, access reviews, Conditional Access, and security monitoring.
-
 ---
 
 ### Technologies Used
@@ -48,6 +35,18 @@
 | **Security Monitoring**      | Log Analytics · KQL                                                         |
 | **Automation & APIs**        | PowerShell · Microsoft Graph PowerShell · Microsoft Graph Explorer          |
 
+---
+## Business Scenario
+
+- Warriors is a company with 80 employees that has been acquired by Campbell Company.
+
+- Before the acquisition, Warriors managed employee identities through an on-premises Windows Active Directory environment.
+
+- As part of the acquisition, the 80 Warriors employees need to be moved into Campbell's Microsoft Entra environment.
+
+- I was responsible for designing and testing an identity management process that could support the migration while also giving administrators a way to manage access, enforce security policies, and handle employee changes after the migration.
+
+- The lab starts with an on-premises Windows Server environment and follows the identity lifecycle all the way through cloud synchronization, user management, access control, SSO, privileged access, access reviews, Conditional Access, and security monitoring.
 ---
 
 ## Lab Architecture
