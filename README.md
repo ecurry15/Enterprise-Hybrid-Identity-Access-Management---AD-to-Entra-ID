@@ -723,67 +723,11 @@ This ensured that only users assigned to the application could authenticate.
 
 ## Skills Demonstrated
 
-### Identity & Access Management
-
-* User lifecycle management
-* Joiner/Mover/Leaver processes
-* RBAC
-* Group-based access
-* Attribute-based access
-* Administrative Units
-* Dynamic groups
-* Role-assignable groups
-* Privileged access management
-* Access Reviews
-
-### Microsoft Entra ID
-
-* Entra ID administration
-* Cloud-managed users
-* Enterprise applications
-* Conditional Access
-* PIM
-* Application assignments
-* Named locations
-* MFA
-* Break-glass account management
-
-### Active Directory
-
-* Windows Server 2022
-* Active Directory Domain Services
-* Organizational Units
-* Security groups
-* User provisioning
-* PowerShell automation
-* Department attributes
-
-### Identity Federation & Application Integration
-
-* SAML 2.0
-* SSO
-* Salesforce integration
-* Enterprise applications
-* OAuth
-* Microsoft Graph
-* Delegated permissions
-
-### Security & Monitoring
-
-* Log Analytics
-* Diagnostic settings
-* KQL
-* Sign-in log investigation
-* Audit logs
-* Alert rules
-* Action groups
-* Break-glass account monitoring
-
-### Automation
-
-* PowerShell
-* Active Directory user provisioning
-* Microsoft Graph PowerShell
-* Bulk cloud-management changes
-* KQL queries
-
+| Category                                          | Skills                                                                                                                                                                                                                          |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Identity & Access Management**                  | User lifecycle management · Joiner/Mover/Leaver processes · RBAC · Group-based access · Attribute-based access · Administrative Units · Dynamic groups · Role-assignable groups · Privileged access management · Access Reviews |
+| **Microsoft Entra ID**                            | Entra ID administration · Cloud-managed users · Enterprise applications · Conditional Access · PIM · Application assignments · Named locations · MFA · Break-glass account management                                           |
+| **Active Directory**                              | Windows Server 2022 · Active Directory Domain Services · Organizational Units · Security groups · User provisioning · PowerShell automation · Department attributes                                                             |
+| **Identity Federation & Application Integration** | SAML 2.0 · SSO · Salesforce integration · Enterprise applications · OAuth · Microsoft Graph · Delegated permissions                                                                                                             |
+| **Security & Monitoring**                         | Log Analytics · Diagnostic settings · KQL · Sign-in log investigation · Audit logs · Alert rules · Action groups · Break-glass account monitoring                                                                               |
+| **Automation**                                    | PowerShell · Active Directory user provisioning · Microsoft Graph PowerShell · Bulk cloud-management changes · KQL queries                                                                                                      |
