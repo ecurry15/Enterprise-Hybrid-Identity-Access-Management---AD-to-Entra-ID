@@ -1,5 +1,7 @@
 # Enterprise Hybrid Identity & Access Management Lab — Active Directory to Entra ID
 
+<img width="900" alt="Lab diagram" src="https://github.com/user-attachments/assets/bfcfe7f4-fc93-42bf-b877-f05e264b07fd" />
+
 ## Table of Contents
 
 * [Technologies Used](#technologies-used)
