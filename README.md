@@ -542,9 +542,7 @@ A VPN was then used to simulate an employee signing in from outside the office (
 The test user was denied access as expected.
 
 <img width="900" alt="CA policy1" src="https://github.com/user-attachments/assets/144368c7-bed2-480e-ac80-6ede38acd805" />
-
-<img width="900" alt="BreakGlass excluded from policies" src="https://github.com/user-attachments/assets/01242478-599d-4ba6-a1a6-6f2155adb48a" />
-
+<img width="900" alt="Named location" src="https://github.com/user-attachments/assets/19edbc29-266f-4d65-a738-c3f1b02b6d80" />
 <img width="900" alt="Dmorgan sign-in out of office" src="https://github.com/user-attachments/assets/eb29044f-d798-4a26-b3c0-05657e0d991f" />
 
 ---
