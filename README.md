@@ -101,7 +101,7 @@ The first part of the lab was creating the on-premises identity environment that
 
 ### Active Directory Setup
 
-I created a Windows Server 2022 domain controller named:
+I created a Windows Server 2022 domain controller using an Azure virtual machine:
 
 `Warriors-DC`
 
