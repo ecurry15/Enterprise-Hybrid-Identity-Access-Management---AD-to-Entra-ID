@@ -609,7 +609,7 @@ After confirming logs were being received, I used KQL to search for break-glass 
 
 ```
 SigninLogs
-| where UserPrincipalName == "breakglass01@campbell400.onmicrosoft.com"
+| where UserPrincipalName == "breakglass01@campbell.onmicrosoft.com"
 ```
 
 This allows the security team to quickly identify activity involving the emergency account.
